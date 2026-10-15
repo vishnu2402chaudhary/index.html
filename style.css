@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: white;
+}
+
+.navbar {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.navbar h1 {
+    color: orange;
+    font-size: 35px;
+}
+
+.navbar h1 b {
+    color: green;
+}
+
+.navbar input {
+    flex: 1;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+}
+
+.navbar a {
+    color: black;
+    text-decoration: none;
+}
+
+.navbar button {
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background: #ddd;
+}
+
+.container {
+    width: 90%;
+    margin: 40px auto;
+}
+
+.banner {
+    padding: 35px;
+    height: 295px;
+    border-radius: 15px;
+    background: #287c40;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 45px;
+    margin-bottom: 15px;
+}
+
+.banner p {
+    font-size: 23px;
+    line-height: 1.6;
+}
+
+button {
+    padding: 13px 22px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.offers {
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.card {
+    width: 33.33%;
+    height: 250px;
+    padding: 20px;
+    border-radius: 18px;
+}
+
+.card h2 {
+    font-size: 28px;
+    margin-bottom: 15px;
+}
+
+.card p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+
+.pharmacy {
+    background-color: #08b9b0;
+    color: white;
+}
+
+.pets {
+    background-color: #ffd333;
+    color: #333;
+}
+
+.baby {
+    background-color: #d9e5f6;
+    color: #333;
+}
+
+.heading {
+    margin-top: 35px;
+    margin-bottom: 20px;
+}
+
+.categories {
+    display: flex;
+    gap: 15px;
+}
+
+.categories div {
+    flex: 1;
+    height: 130px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #f0f5ff;
+    border: 10px solid #f0f5ff;
+    border-radius: 15px;
+    font-size: 35px;
+}
+
+@media (max-width: 700px) {
+    .navbar {
+        flex-wrap: wrap;
+    }
+
+    .navbar input {
+        flex-basis: 100%;
+    }
+
+    .offers {
+        flex-direction: column;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    .categories {
+        flex-wrap: wrap;
+    }
+
+    .categories div {
+        min-width: 20%;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+}
